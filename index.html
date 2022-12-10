@@ -7,65 +7,67 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="assets/icon.png">
     <link rel="stylesheet" href="css/principal-style.css">
+
     <title>Poke Api - Inicio</title>
 </head>
 
 
 
 <body>
+
     <header class="menu-bar">
         <img src="assets/icon.png" class="menu-icon" alt="icono-pokemon">
         <h1>Poke Api V2</h1>
     </header>
-    <div class="container">
-        <div class="poke-card">
-            <div class="poke-img">
-                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/emerald/1.png">
-            </div>
-            <div class="poke-info">
-                <p>
-                    Name: Bulbasaur <br>
-                    Type: Grass - Poison
-                </p>
-            </div>
+
+    <div class="container" id="container">
+
+        <div class="poke-container">
+            <a href="">
+                <div class="poke-card">
+
+                    <div class="poke-img">
+                        <div class="poke-num"><b>1</b></div>
+                        <img
+                            src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/emerald/1.png">
+                    </div>
+                    <div class="poke-info">
+                        <p>
+                            Name: Bulbasaur <br>
+                            Type: Grass - Poison
+                        </p>
+                    </div>
+                </div>
+            </a>
         </div>
 
-        <div class="poke-card">
-            <div class="poke-img">
-                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/emerald/1.png">
-            </div>
-            <div class="poke-info">
-                <p>
-                    Name: Bulbasaur <br>
-                    Type: Grass - Poison
-                </p>
-            </div>
-        </div>
 
-        <div class="poke-card">
-            <div class="poke-img">
-                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/emerald/1.png">
+    </div>
+
+    <div id="openModal" class="modalDialog">
+        <a href="#closeModal">
+            <div class="pokedex" id="pokedex">
+                <div class="pokedex-img">
+                    <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/1.svg"
+                        alt="">
+                </div>
+                <div class="pokedex-info">
+                    <div class="pokedex-text">
+                        <h2>Name: Charizard </h2>
+                        <p>
+                            Weight: 10 <br>
+                            Height: 120 <br>
+                            Type: Fire Flying <br>
+
+                        </p>
+                    </div>
+                    <div class="pokedex-type">
+                        <img src="assets/type-dragon.png" alt="">
+                        <img src="assets/type-dragon.png" alt="">
+                    </div>
+                </div>
             </div>
-            <div class="poke-info">
-                <p>
-                    Name: Bulbasaur <br>
-                    Type: Grass - Poison
-                </p>
-            </div>
-        </div>
-        <div class="poke-card">
-            <div class="poke-img">
-                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/emerald/1.png">
-            </div>
-            <div class="poke-info">
-                <p>
-                    Name: Bulbasaur <br>
-                    Type: Grass - Poison
-                </p>
-            </div>
-        </div>
-        
-        
+        </a>
 
     </div>
 
@@ -102,3 +104,4 @@
 
 
 </html>
+<script src="scripts/script.js"></script>
