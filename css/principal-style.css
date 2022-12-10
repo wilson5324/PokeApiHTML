@@ -1,0 +1,253 @@
+body {
+    margin: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.fx-vertical {
+    display: flex;
+    flex-direction: column;
+}
+
+.fx-v-center {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.menu-bar {
+    background-color: #1c7eff;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.menu-icon {
+    width: 40px;
+}
+
+.footer-bar {
+    background-color: #23262a;
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px 0px;
+    gap: 30px;
+    color: white;
+}
+
+.information {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.personal-information {
+    border-right: solid white 1px;
+}
+
+.contact-information {
+    border-right: solid white 1px;
+    gap: 40px;
+}
+
+.contact-links {
+    gap: 20px;
+}
+
+.tecnologies-information {
+    gap: 20px;
+}
+
+.information-links {
+    gap: 3px;
+}
+
+.icon-information {
+    width: 30px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 30px;
+    padding: 10px 0;
+    width: 100%;
+}
+
+.poke-container {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.poke-card {
+    width: 397px;
+    display: flex;
+
+    justify-content: center;
+
+}
+
+.poke-card :hover {
+    cursor: pointer;
+}
+
+.poke-img {
+    width: 100px;
+    height: 100px;
+    border: solid #23262a 5px;
+    border-radius: 100%;
+    background-color: white;
+    position: relative;
+    z-index: 1;
+}
+
+.poke-num b {
+    font-size: 11px;
+}
+
+.poke-num {
+    width: 25px;
+    height: 25px;
+    color: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #23262a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100px;
+}
+
+.poke-img img {
+    width: 100px;
+    height: 100px;
+}
+
+.poke-info {
+    width: 100%;
+    border: solid #23262a 5px;
+    transform: translate(-35%, 0);
+    background-color: crimson;
+    border-radius: 60px;
+}
+
+.poke-info p {
+    margin-left: 100px;
+    color: white;
+}
+
+.modalDialog {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 99999;
+    opacity: 0;
+    -webkit-transition: opacity 400ms ease-in;
+    -moz-transition: opacity 400ms ease-in;
+    transition: opacity 400ms ease-in;
+    pointer-events: none;
+}
+
+.modalDialog:target {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.close {
+    background: #606061;
+    color: #FFFFFF;
+    line-height: 25px;
+    position: absolute;
+    right: -12px;
+    text-align: center;
+    top: -10px;
+    width: 24px;
+    text-decoration: none;
+    font-weight: bold;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    border-radius: 12px;
+    -moz-box-shadow: 1px 1px 3px #000;
+    -webkit-box-shadow: 1px 1px 3px #000;
+    box-shadow: 1px 1px 3px #000;
+}
+
+.close:hover {
+    background: #00d9ff;
+}
+
+.pokedex {
+    width: 60%;
+    height: 40%;
+    position: relative;
+    margin: 5% auto;
+    padding: 5px 20px 13px 20px;
+    border-radius: 10px;
+    background: #fff;
+    -webkit-transition: opacity 400ms ease-in;
+    -moz-transition: opacity 400ms ease-in;
+    transition: opacity 400ms ease-in;
+    background-color: #23262a;
+    display: grid;
+    grid-template-columns: 30% 70%;
+}
+
+.pokedex-img {
+    display: flex;
+    align-items: center;
+
+}
+
+.pokedex-img img {
+    height: 300px;
+    justify-content: center;
+    background-color: white;
+    border: crimson 4px solid;
+    border-radius: 300px;
+    width: 300px;
+}
+
+.pokedex-info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.pokedex-text {
+    width: 50%;
+    color: white;
+}
+
+.pokedex-text h2 {
+    font-size: 40px;
+}
+
+.pokedex-type {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.pokedex-type img {
+    width: 100px;
+}
